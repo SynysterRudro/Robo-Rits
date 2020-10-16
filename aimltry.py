@@ -14,7 +14,7 @@ app= Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return render_template("index.html")
 
 # @app.route("/index")
 # def index():
@@ -28,7 +28,7 @@ def api(query):
 
 @app.route('/form_login',methods=['POST','GET'])
 def index():
-      return render_template('index.html')
+      return render_template('index-1.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
